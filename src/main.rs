@@ -1,4 +1,3 @@
-
 use actions::decrement;
 use actions::increment;
 use actions::loop_bypass;
@@ -66,4 +65,3 @@ fn interpreter(tape: Vec<u8>, input: &Vec<char>, ptr: usize, cur_pos: usize) -> 
 fn string_to_char(inp: String) -> Vec<char> {
     return inp.chars().collect(); 
 }
-

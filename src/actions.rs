@@ -4,18 +4,14 @@ pub fn left (ptr: usize) -> usize {
     if ptr == 0 {
         return memory-1;
     }
-    else {
-        return ptr - 1;
-    }
+    return ptr - 1;
 }
 
 pub fn right (ptr: usize) -> usize {
     if ptr == memory-1 {
         return 0;
     }
-    else {
-        return ptr + 1;
-    }
+    return ptr + 1;
 }
 
 
@@ -60,7 +56,6 @@ pub fn loop_bypass(input: &Vec<char>, cur_pos: usize, bracket_count: usize) -> (
         ']' => {
             if bracket_count == 0 {
                 return ( input,  cur_pos  + 1, bracket_count);
-                
             }
             else {
                 return loop_bypass( input,  cur_pos  + 1, bracket_count -1);
